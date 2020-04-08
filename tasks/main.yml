@@ -1,0 +1,26 @@
+---
+# tasks file for jitsi
+- name: install repository key
+  apt_key:
+    url: "https://download.jitsi.org/jitsi-key.gpg.key"
+    validate_certs: no
+    state: present
+
+- name: add repository
+  apt_repository:
+    repo: "deb https://download.jitsi.org {{ jitsi_release }}/"
+    filename: jitsi-{{ jitsi_release }}
+    state: present
+
+- name: set installer options
+  debconf:
+    name: "{{ item.name }}"
+    question: "{{ item.question }}"
+    value: "{{ item.value }}"
+    vtype: "{{ item.type }}"
+  loop: "{{ jitsi_settings }}"
+
+- name: install jitsi-meet
+  package:
+    name: jitsi-meet
+    state: present

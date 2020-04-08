@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Robert de Bock
+  role_name: jitsi
+  description: Install and configure jitsi on your system.
+  license: Apache-2.0
+  company: none
+  min_ansible_version: 2.8
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - jitsi
+
+dependencies: []
