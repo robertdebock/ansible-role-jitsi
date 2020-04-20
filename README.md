@@ -4,7 +4,7 @@ Install and configure jitsi on your system.
 
 |Travis|GitHub|Quality|Downloads|
 |------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-jitsi.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-jitsi)|[![github](https://github.com/robertdebock/ansible-role-jitsi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-jitsi/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/jitsi)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/jitsi)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-jitsi.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-jitsi)|[![github](https://github.com/robertdebock/ansible-role-jitsi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-jitsi/actions)|[![quality](https://img.shields.io/ansible/quality/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|[![downloads](https://img.shields.io/ansible/role/d/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|
 
 ## Example Playbook
 
