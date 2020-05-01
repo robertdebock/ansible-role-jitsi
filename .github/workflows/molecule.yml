@@ -11,7 +11,7 @@ on:
       - '*'
   pull_request:
   schedule:
-    - cron: '14 8 10 * *'
+    - cron: '10 10 10 * *'
 
 jobs:
   lint:
@@ -38,6 +38,8 @@ jobs:
             tag: "bullseye"
           - image: "ubuntu"
             tag: "latest"
+          - image: "ubuntu"
+            tag: "1804"
     steps:
       - name: checkout
         uses: actions/checkout@v2
