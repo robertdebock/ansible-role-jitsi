@@ -32,7 +32,6 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
     - role: robertdebock.bootstrap
     - role: robertdebock.ca_certificates
     - role: robertdebock.hostname
-
 ```
 
 For verification `molecule/resources/verify.yml` run after the role has been applied.
@@ -72,11 +71,11 @@ jitsi_settings:
     type: boolean
   - name: jitsi-meet-prosody
     question: jitsi-meet-prosody/jvb-hostname
-    value: "{{ ansible_hostname }}"
+    value: "{{ ansible_fqdn }}"
     type: string
   - name: jitsi-videobridge
     question: jitsi-videobridge/jvb-hostname
-    value: "{{ ansible_hostname }}"
+    value: "{{ ansible_fqdn }}"
     type: string
 ```
 
