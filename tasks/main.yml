@@ -19,6 +19,8 @@
     value: "{{ item.value }}"
     vtype: "{{ item.type }}"
   loop: "{{ jitsi_settings }}"
+  loop_control:
+    label: "{{ item.question }}"
 
 - name: install jitsi-meet
   package:
