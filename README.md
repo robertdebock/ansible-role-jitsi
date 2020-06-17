@@ -67,7 +67,7 @@ jitsi_settings:
     type: string
   - name: jitsi-meet
     question: jitsi-meet/jvb-serve
-    value: true|bool
+    value: yes|bool
     type: boolean
   - name: jitsi-meet-prosody
     question: jitsi-meet-prosody/jvb-hostname
