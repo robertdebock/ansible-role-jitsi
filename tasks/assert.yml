@@ -1,0 +1,28 @@
+---
+- name: test if jitsi_release is set correctly
+  assert:
+    that:
+      - jitsi_release is defined
+      - jitsi_release | length > 0
+      - jitsi_release in ["stable", "testing", "nightly"]
+
+- name: test if jitsi_settings is set correctly
+  assert:
+    that:
+      - jitsi_settings is defined
+      - jitsi_settings | length > 0
+      - jitsi_settings is iterable
+
+- name: test if item in jitsi_settings is set correctly
+  assert:
+    that:
+      - item.name is defined
+      - item.name | length > 0
+      - item.question is defined
+      - item.question | length > 0
+      - item.value is defined
+      - item.value | length > 0
+      - item.type is defined
+      - item.type | length > 0
+      - item.type in ["string", "boolean"]
+  loop: "{{ jitsi_settings }}"
