@@ -25,4 +25,5 @@
       - item.type is defined
       - item.type | length > 0
       - item.type in ["string", "boolean"]
+    quiet: yes
   loop: "{{ jitsi_settings }}"
