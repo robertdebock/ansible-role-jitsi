@@ -27,3 +27,5 @@
       - item.type in ["string", "boolean"]
     quiet: yes
   loop: "{{ jitsi_settings }}"
+  loop_control:
+    label: "{{ item.name }}"
