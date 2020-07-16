@@ -8,18 +8,12 @@
     url: "https://download.jitsi.org/jitsi-key.gpg.key"
     validate_certs: no
     state: present
-  register: jitsi_install_repository_key
-  until: jitsi_install_repository_key is succeeded
-  retries: 3
 
 - name: add repository
   apt_repository:
     repo: "deb https://download.jitsi.org {{ jitsi_release }}/"
     filename: jitsi-{{ jitsi_release }}
     state: present
-  register: jitsi_add_repository
-  until: jitsi_add_repository is succeeded
-  retries: 3
 
 - name: set installer options
   debconf:
@@ -35,6 +29,3 @@
   package:
     name: jitsi-meet
     state: present
-  register: jisti_install_jitsi_meet
-  until: jisti_install_jitsi_meet is succeeded
-  retries: 3
