@@ -5,6 +5,7 @@
       - jitsi_release is defined
       - jitsi_release | length > 0
       - jitsi_release in ["stable", "testing", "nightly"]
+    quiet: yes
 
 - name: test if jitsi_settings is set correctly
   assert:
@@ -12,6 +13,7 @@
       - jitsi_settings is defined
       - jitsi_settings | length > 0
       - jitsi_settings is iterable
+    quiet: yes
 
 - name: test if item in jitsi_settings is set correctly
   assert:
