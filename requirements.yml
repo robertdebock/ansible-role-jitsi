@@ -1,4 +1,5 @@
 ---
-- robertdebock.bootstrap
-- robertdebock.ca_certificates
-- robertdebock.hostname
+roles:
+  - name: robertdebock.bootstrap
+  - name: robertdebock.ca_certificates
+  - name: robertdebock.hostname
