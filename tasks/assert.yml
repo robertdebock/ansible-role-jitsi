@@ -3,7 +3,6 @@
   assert:
     that:
       - jitsi_release is defined
-      - jitsi_release | length > 0
       - jitsi_release in [ "stable", "testing", "nightly" ]
     quiet: yes
 
@@ -11,7 +10,6 @@
   assert:
     that:
       - jitsi_settings is defined
-      - jitsi_settings | length > 0
       - jitsi_settings is iterable
     quiet: yes
 
@@ -19,13 +17,9 @@
   assert:
     that:
       - item.name is defined
-      - item.name | length > 0
       - item.question is defined
-      - item.question | length > 0
       - item.value is defined
-      - item.value | length > 0
       - item.type is defined
-      - item.type | length > 0
       - item.type in [ "string", "boolean" ]
     quiet: yes
   loop: "{{ jitsi_settings }}"
