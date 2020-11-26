@@ -1,4 +1,5 @@
 ---
+
 - name: test if jitsi_release is set correctly
   assert:
     that:
