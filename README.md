@@ -2,9 +2,9 @@
 
 Install and configure jitsi on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-jitsi.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-jitsi)|[![github](https://github.com/robertdebock/ansible-role-jitsi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-jitsi/actions)|[![quality](https://img.shields.io/ansible/quality/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|[![downloads](https://img.shields.io/ansible/role/d/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-jitsi.svg)](https://github.com/robertdebock/ansible-role-jitsi/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-jitsi.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-jitsi)|[![github](https://github.com/robertdebock/ansible-role-jitsi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-jitsi/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-jitsi/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-jitsi)|[![quality](https://img.shields.io/ansible/quality/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|[![downloads](https://img.shields.io/ansible/role/d/47727)](https://galaxy.ansible.com/robertdebock/jitsi)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-jitsi.svg)](https://github.com/robertdebock/ansible-role-jitsi/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
