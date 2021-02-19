@@ -7,19 +7,19 @@
   delegate_to: localhost
 
 - name: install repository key
-  apt_key:
+  ansible.builtin.apt_key:
     url: "https://download.jitsi.org/jitsi-key.gpg.key"
     validate_certs: no
     state: present
 
 - name: add repository
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: "deb https://download.jitsi.org {{ jitsi_release }}/"
     filename: jitsi-{{ jitsi_release }}
     state: present
 
 - name: set installer options
-  debconf:
+  ansible.builtin.debconf:
     name: "{{ item.name }}"
     question: "{{ item.question }}"
     value: "{{ item.value }}"
@@ -29,6 +29,6 @@
     label: "{{ item.question }}"
 
 - name: install jitsi-meet
-  package:
+  ansible.builtin.package:
     name: jitsi-meet
     state: present
