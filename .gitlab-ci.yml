@@ -21,7 +21,7 @@ molecule:
       - image: "debian"
         tag: "bookworm"
       - image: "ubuntu"
-        tag: "latest"
+        tag: "focal"
 
 galaxy:
   script:
