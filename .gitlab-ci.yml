@@ -19,8 +19,6 @@ molecule:
     matrix:
       - image: "debian"
         tag: "latest"
-      - image: "debian"
-        tag: "bookworm"
       - image: "ubuntu"
         tag: "focal"
 
