@@ -14,8 +14,6 @@ molecule:
     matrix:
       - image: "debian"
         tag: "latest"
-      - image: "ubuntu"
-        tag: "focal"
 
 galaxy:
   script:

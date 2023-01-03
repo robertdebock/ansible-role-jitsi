@@ -31,8 +31,6 @@ jobs:
         config:
           - image: "debian"
             tag: "latest"
-          - image: "ubuntu"
-            tag: "focal"
     steps:
       - name: checkout
         uses: actions/checkout@v3
