@@ -30,7 +30,7 @@ jobs:
       matrix:
         config:
           - image: "debian"
-            tag: "latest"
+            tag: "bullseye"
     steps:
       - name: checkout
         uses: actions/checkout@v3
