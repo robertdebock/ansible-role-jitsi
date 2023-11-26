@@ -1,4 +1,4 @@
-# Ansible role [jitsi](#jitsi)
+# [Ansible role jitsi](#jitsi)
 
 Install and configure jitsi on your system.
 
