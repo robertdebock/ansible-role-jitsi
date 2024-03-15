@@ -5,7 +5,7 @@ argument_specs:
     options:
       jitsi_release:
         type: "str"
-        required: true
+        required: yes
         description: "The type of release to install."
         choices:
           - stable
