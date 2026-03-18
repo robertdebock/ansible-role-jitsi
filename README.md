@@ -62,11 +62,11 @@ jitsi_settings:
     type: boolean
   - name: jitsi-meet-prosody
     question: jitsi-meet-prosody/jvb-hostname
-    value: "{{ ansible_fqdn }}"
+    value: "{{ ansible_facts['fqdn'] }}"
     type: string
   - name: jitsi-videobridge
     question: jitsi-videobridge/jvb-hostname
-    value: "{{ ansible_fqdn }}"
+    value: "{{ ansible_facts['fqdn'] }}"
     type: string
 ```
 
