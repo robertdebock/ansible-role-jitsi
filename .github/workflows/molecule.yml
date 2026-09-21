@@ -35,7 +35,9 @@ jobs:
       matrix:
         distro:
           - image: "debian"
-            tag: "bullseye"
+            tag: "latest"
+          - image: "debian"
+            tag: "bookworm"
     steps:
       - name: checkout
         uses: actions/checkout@v5

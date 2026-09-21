@@ -20,7 +20,9 @@ molecule:
   parallel:
     matrix:
       - image: "debian"
-        tag: "bullseye"
+        tag: "latest"
+      - image: "debian"
+        tag: "bookworm"
 
 galaxy:
   image: python:3.13
