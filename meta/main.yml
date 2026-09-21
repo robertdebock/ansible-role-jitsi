@@ -10,7 +10,7 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
-        - bullseye
+        - all
 
   galaxy_tags:
     - jitsi
