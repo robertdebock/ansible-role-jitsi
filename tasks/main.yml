@@ -8,10 +8,11 @@
   delegate_to: localhost
 
 - name: Install repository key
-  ansible.builtin.apt_key:
+  ansible.builtin.get_url:
     url: "https://download.jitsi.org/jitsi-key.gpg.key"
     validate_certs: false
-    state: present
+    dest: /etc/apt/trusted.gpg.d/jitsi.asc
+    mode: "0644"
 
 - name: Add repository
   ansible.builtin.apt_repository:
