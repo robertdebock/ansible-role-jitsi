@@ -9,3 +9,5 @@
     - role: robertdebock.ca_certificates
     - role: robertdebock.hostname
     - role: robertdebock.prosody
+      # jitsi-meet-prosody adds its own virtual hosts, but skips that when the hostname is already configured.
+      prosody_domain: prosody.example.com
