@@ -35,6 +35,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     - role: robertdebock.ca_certificates
     - role: robertdebock.hostname
     - role: robertdebock.prosody
+      # jitsi-meet-prosody adds its own virtual hosts, but skips that when the hostname is already configured.
+      prosody_domain: prosody.example.com
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
@@ -100,11 +102,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |---------|----|
 |[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
 
-The minimum version of Ansible required is 2.12, tests have been done on:
-
-- The previous version.
-- The current version.
-- The development version.
+The minimum version of Ansible (ansible-core) required is 2.20, tests are done with the latest release of ansible-core.
 
 If you find issues, please register them on [GitHub](https://github.com/robertdebock/ansible-role-jitsi/issues).
 
